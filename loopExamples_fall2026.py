@@ -41,6 +41,7 @@ def test_loop_through_it():
     loop_through_it({2,10,3,20})    # set (order is not guarenteed)
     print("\nDictionary... ")
     loop_through_it({'discussion':10, 'attendance':5, 'zybook':30}) #dictionary
+    
 
 def test_count_vowels():
     ''' This function doesn't take any input or return any values. It tests the count_vowels function with two 
