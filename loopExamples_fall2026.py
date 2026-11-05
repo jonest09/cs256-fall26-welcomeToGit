@@ -12,7 +12,7 @@ def loop_through_it(data_structure):
 def num_vowels(input_text):
     ''' count and return the number of vowels in the input text'''
     count = 0
-    for character in input_text:
+    for character in input_text.lower():
         # check if character should be counted
         # assumes y is not a vowel
         if character in ['a','e','i','o','u']:
