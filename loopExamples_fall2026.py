@@ -46,13 +46,23 @@ def test_count_vowels():
     ''' This function doesn't take any input or return any values. It tests the count_vowels function with two 
     different strings.'''
     print("\n\nExecuting count vowel function... ")
-    print("And, printing value(s) returned for first execution with 'Hello! My name is Maggie V.' :")
-    print(num_vowels("Hello! My name is Maggie V."))
-    text = "How many vowels?"
+    print("And, printing value(s) returned for first execution with 'Hello! My name is Aggie V.' :")
+    print(num_vowels("Hello! My name is Aggie V."))
+    text = "How many non-vowels?"
     print("And, printing value(s) returned for second execution: ", text)
     print(num_vowels(text))
-    print()
-    # what if we wanted to count non_vowels?
+    print("And, printing value(s) returned for third execution with 'How many non-vowels?' :")
+    print(count_non_vowels("How many non-vowels?"))
+
+def count_non_vowels(input_text):
+    ''' count and return the number of non-vowels in the input text'''
+    count = 0
+    for character in input_text.lower():
+        # check if character should be counted
+        # assumes y is not a vowel
+        if character not in ['a','e','i','o','u']:
+            count += 1
+    return count
 
 def test_nested_loops():
     ''' This function doesn't take any input or return any values. It tests the nested_loops function with two 
@@ -68,11 +78,11 @@ def main():
     ''' This function is called when this file is executed directly.
     It does not take in any parameters and it will return None '''
     # test loop through structures
-    test_loop_through_it()
+   # test_loop_through_it()
     # testing count vowels
     test_count_vowels()
     # test nested loops
-    test_nested_loops()
+    #test_nested_loops()
 
 if __name__ == "__main__":
     # execute the main function
